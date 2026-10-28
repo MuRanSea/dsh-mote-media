@@ -1,9 +1,11 @@
 # mote Media Studio (DSH plugin)
 
-在 DeepSeek Harness 里通过 **mote 媒体渠道** 生成图片和视频：一块无限画布 + 四个智能体工具，共用同一套 Host 实现。
+在 DeepSeek Harness 里通过 **mote 媒体渠道** 生成图片和视频：一块**即梦式创作台** + 四个智能体工具，共用同一套 Host 实现。
 
-- 平台接口参考：<https://platform.sgt.site/docs/>
-- 交互形态参考开源项目 [MuRanSea/media-workstage](https://github.com/MuRanSea/media-workstage)：一张卡反复生成、结果留在本地、多模型集中使用。
+- 平台接口参考：<https://platform.sgt.site/docs/>，接口契约按它实现（统一媒体任务、任务轮询、幂等重放、错误码）。
+- 面板形态参考即梦：顶部大输入卡（参考图 / 首尾帧 + 参数条 + 圆形发送键），下面是「我的作品」网格。
+- 多渠道：一条 mote 统一渠道覆盖 Seedream / Seedance / Nano Banana / GPT Image / 可灵 / MiniMax H3，另可加任意 OpenAI 兼容渠道。
+- 「每张卡反复生成、结果留本地、多模型集中使用」的思路来自 [MuRanSea/media-workstage](https://github.com/MuRanSea/media-workstage)；早期版本做过卡片+连线的画布，现已按即梦形态重做。
 
 ## 渠道配置（多渠道路由）
 
@@ -16,7 +18,7 @@
 
 模型目录**跨渠道聚合**，每条模型都带它所属的渠道；生成时按模型的归属自动选渠道，也可以显式传 `channel` 指定。面板里的模型下拉按渠道分组（`optgroup`）。
 
-配置写在 profile 的 `cordis.patch.yml` 中本插件的行里，或在画布的「渠道设置」里增删渠道（写回同一行；面板拿不到已存密钥，留空表示沿用旧值）：
+配置写在 profile 的 `cordis.patch.yml` 中本插件的行里，或在创作台的「渠道设置」里增删渠道（写回同一行；面板拿不到已存密钥，留空表示沿用旧值）：
 
 ```yaml
 - id: mote-media
