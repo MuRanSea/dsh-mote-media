@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="mote Media Studio">
+  <defs>
+    <linearGradient id="moteBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3d7bfd"/>
+      <stop offset="1" stop-color="#8a5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="url(#moteBg)"/>
+  <rect x="11" y="15" width="42" height="30" rx="7" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.95"/>
+  <circle cx="20" cy="24.5" r="3" fill="#ffffff" opacity="0.95"/>
+  <path d="M15 40.5l9.5-9.5 7 6.5 5.5-5.5 7.5 8.5" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+  <path d="M26.5 53h11" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+</svg>

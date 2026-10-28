@@ -1,0 +1,49 @@
+{
+  "name": "@local/dsh-mote-media",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "即梦式 mote 媒体创作台：DeepSeek Harness 插件，多渠道路由的生图/生视频面板 + 智能体工具。",
+  "license": "MIT",
+  "author": "MuRanSea",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "mote",
+    "seedream",
+    "seedance",
+    "image-generation",
+    "video-generation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuRanSea/dsh-mote-media.git"
+  },
+  "homepage": "https://github.com/MuRanSea/dsh-mote-media#readme",
+  "bugs": {
+    "url": "https://github.com/MuRanSea/dsh-mote-media/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "mote.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

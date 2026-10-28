@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "mote Studio",
+    "description": "A 即梦-style generation page: a prompt composer with reference/first-last frames and a parameter bar, every run landing as a tile in the gallery below, with preview, local download, reuse as reference, and multi-channel routing."
+  }
+}

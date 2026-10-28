@@ -1,0 +1,22 @@
+- insert:
+    - id: mote-media
+      name: '@local/dsh-mote-media'
+      config:
+        channels:
+          - id: mote
+            name: mote
+            driver: mote
+            baseUrl: 'https://platform.sgt.site'
+            apiKey: ''
+            enabled: true
+          # - id: openai
+          #   name: openai compatible
+          #   driver: openai-images
+          #   baseUrl: 'https://api.openai.com'
+          #   apiKey: ''
+          #   models: ['dall-e-3', 'gpt-image-1']
+          #   enabled: true
+        imageModel: 'doubao-seedream-5-0-lite-260128'
+        videoModel: 'doubao-seedance-2-0-fast-260128'
+        outputDir: ''
+        pollIntervalMs: 3000
