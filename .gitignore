@@ -1,5 +1,7 @@
 node_modules/
+*.tgz
 .mote-state.json
+.mote-submissions/
 *.log
 npm-debug.log*
 .DS_Store
